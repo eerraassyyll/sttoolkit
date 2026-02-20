@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body {
+  text-align: center;
+}
+#wrapper {
+  margin-top: 20px;
+}
+#input {
+  margin-bottom: 10px;
+}
+#list {
+  padding: 0;
+  list-style: none;
+}
+#list li {
+  margin: 5px 0;
+}
+.task {
+  margin-right: 10px;
+}
+.remove, .mark {
+  color: blue;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.remove:hover, .mark:hover {
+  text-decoration: underline;
+}
+.done .task {
+  text-decoration: line-through;
+}
