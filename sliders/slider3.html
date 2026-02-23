@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" id="vlevo">← Назад</a>
+    <a href="#" id="vpravo">Вперед →</a>
+    <div id="slider"></div>
+
+    <script>
+let teksti = ['Начало', 'Середина', 'Конец'];
+let i = 0;
+
+let blok = document.querySelector('#slider');
+let knopka_vlevo = document.querySelector('#vlevo');
+let knopka_vpravo = document.querySelector('#vpravo');
+
+blok.textContent = teksti[i];
+
+knopka_vpravo.addEventListener('click', function(event) {
+	event.preventDefault();
+	
+	if (i < teksti.length - 1) {
+		i++;
+	}
+	
+	blok.textContent = teksti[i];
+});
+
+knopka_vlevo.addEventListener('click', function(event) {
+	event.preventDefault();
+	
+	if (i > 0) {
+		i--;
+	}
+	
+	blok.textContent = teksti[i];
+});
+    </script>
+</body>
+</html>
