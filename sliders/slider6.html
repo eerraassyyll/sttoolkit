@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div id="slider">
+            <img src="https://th.bing.com/th?id=ORMS.f4fdb73c3e0a1274d215c74d1c9783af&pid=Wdp&w=268&h=140&qlt=90&c=1&rs=1&dpr=1&p=0">
+            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1WsHem?w=300&h=157&q=60&m=6&f=jpg&u=t">
+            <img src="https://th.bing.com/th?id=ORMS.8185a0e55bf9bf72bada55b2f30b82c0&pid=Wdp&w=268&h=140&qlt=90&c=1&rs=1&dpr=1&p=0">
+        </div>
+    </div>
+
+    <script>
+let foto = document.querySelectorAll('img');
+foto.forEach(e => {
+    e.classList.add('h')
+});
+let i = 0;
+
+setInterval(function() {
+	i++;
+	
+	if (i === foto.length) {
+		i = 0;
+	}
+
+    foto.forEach(e => {
+        e.classList.add('h')
+    });
+
+    foto[i].classList.remove('h')
+	
+}, 1000);
+    </script>
+</body>
+</html>
