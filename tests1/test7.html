@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .r {
+            border: 2px solid green;
+        }
+        .wr {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="test1">
+        <div>
+            <p>1. Какой сейчас год?</p>
+            <label><input type="radio" name="q1" data-r> 2026</label>
+            <label><input type="radio" name="q1"> 2025</label>
+            <label><input type="radio" name="q1"> 2020</label>
+        </div>
+        <div>
+            <p>2. Кто съел колобка?</p>
+            <label><input type="radio" name="q2"> Заяц</label>
+            <label><input type="radio" name="q2" data-r> Лиса</label>
+            <label><input type="radio" name="q2"> Волк</label>
+        </div>
+    </div>
+
+    <div id="test2">
+        <div>
+            <p>3. Какого цвета лимон?</p>
+            <label><input type="radio" name="q3"> Синий</label>
+            <label><input type="radio" name="q3" data-r> Желтый</label>
+        </div>
+        <div>
+            <p>4. 2 + 2 = ?</p>
+            <label><input type="radio" name="q4" data-r> 4</label>
+            <label><input type="radio" name="q4"> 5</label>
+        </div>
+        <br>
+        <button id="proverit">Проверить всё</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
